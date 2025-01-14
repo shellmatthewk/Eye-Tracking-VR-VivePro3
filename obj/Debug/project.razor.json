@@ -1,0 +1,20 @@
+{
+  "SerializedFilePath": "c:\\Users\\VROTO\\VR March\\obj\\Debug\\project.razor.json",
+  "FilePath": "c:\\Users\\VROTO\\VR March\\Assembly-CSharp.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 900
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.3"
+}
