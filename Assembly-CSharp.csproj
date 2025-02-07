@@ -49,6 +49,7 @@
      <Compile Include="Assets\ViveSR\Scripts\Eye\SRanipal_Eye_Enums.cs" />
      <Compile Include="Assets\TargetPosition1.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Eye\Sample\DartBoard.cs" />
+     <Compile Include="Assets\Installer\WaveInstaller.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Lip\SRanipal_Lip_v2.cs" />
      <Compile Include="Assets\Ardity\Scripts\Threads\SerialThread.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Eye\Sample\SRanipal_GazeRaySample.cs" />
@@ -1110,6 +1111,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Wave.Essence.Controller.Model.csproj">
+      <Project>{74eb6888-45f0-9a42-b43a-ba8fbf004c85}</Project>
+      <Name>Wave.Essence.Controller.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="Wave.Essence.InputModule.csproj">
+      <Project>{70f02e12-a2ed-56a1-4665-fd07f35c1a4b}</Project>
+      <Name>Wave.Essence.InputModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="Wave.Essence.Hand.Model.csproj">
+      <Project>{fbd3377e-e29c-e7f4-a8f2-8592c9903977}</Project>
+      <Name>Wave.Essence.Hand.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="Wave.Essence.Interaction.Mode.csproj">
+      <Project>{3dbbbcb7-7ea7-dd0f-d372-e02c7ef06a01}</Project>
+      <Name>Wave.Essence.Interaction.Mode</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

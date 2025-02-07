@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638068229558201669
+      ticks: 638742944046977943
     m_Hash: 2087153358
   m_LockFileStatus:
     m_FilePath: C:/Users/VROTO/Documents/GitHub/VR_MARCH_IN_PROGRESS (USE THE OTHER)/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638068229558221601
+      ticks: 638742944046977943
     m_Hash: 2252404103
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -78,20 +78,20 @@ m_ResolvedPackages:
   resolvedDependencies:
   - name: com.unity.xr.management
     version: 4.2.0
-  - name: com.unity.modules.subsystems
+  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.xr
     version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.9
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
   - name: com.unity.subsystemregistration
     version: 1.1.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.9
   keywords:
   - tobii
   - sdk
@@ -128,7 +128,7 @@ m_ResolvedPackages:
     name: 
     email: 
     url: 
-  category: Editor
+  category: 
   type: asset
   description: The Version Control package gives you the ability to use either Collaborate
     or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic SCM for Unity
@@ -197,9 +197,23 @@ m_ResolvedPackages:
     - 2.0.0-preview.20
     - 2.0.0-preview.21
     - 2.0.0-preview.22
+    - 2.0.0
+    - 2.0.1
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
+    - 2.1.0
+    - 2.2.0
+    - 2.3.1
+    - 2.4.3
+    - 2.4.4
+    - 2.5.1
+    - 2.5.2
+    - 2.6.0
     compatible:
     - 1.15.16
     - 1.15.17
@@ -216,9 +230,23 @@ m_ResolvedPackages:
     - 2.0.0-preview.20
     - 2.0.0-preview.21
     - 2.0.0-preview.22
+    - 2.0.0
+    - 2.0.1
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
+    - 2.1.0
+    - 2.2.0
+    - 2.3.1
+    - 2.4.3
+    - 2.4.4
+    - 2.5.1
+    - 2.5.2
+    - 2.6.0
     verified: 1.15.18
   dependencies:
   - name: com.unity.services.core
@@ -226,11 +254,11 @@ m_ResolvedPackages:
   resolvedDependencies:
   - name: com.unity.services.core
     version: 1.3.1
-  - name: com.unity.modules.unitywebrequest
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.0.2
-  - name: com.unity.modules.androidjni
+  - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   keywords:
   - backup
@@ -388,20 +416,20 @@ m_ResolvedPackages:
     version: 3.0.1
   - name: com.unity.xr.management
     version: 4.2.0
-  - name: com.unity.modules.subsystems
+  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.xr
     version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.9
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
   - name: com.unity.subsystemregistration
     version: 1.1.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.9
   - name: com.unity.xr.openxr
     version: 1.4.1
   - name: com.unity.inputsystem
@@ -490,13 +518,35 @@ m_ResolvedPackages:
     - 3.0.15
     - 3.0.16
     - 3.0.17
+    - 3.0.18
+    - 3.0.20
+    - 3.0.21
+    - 3.0.22
+    - 3.0.24
+    - 3.0.25
+    - 3.0.26
+    - 3.0.27
+    - 3.0.28
+    - 3.0.31
+    - 3.0.34
     compatible:
     - 3.0.13
     - 3.0.14
     - 3.0.15
     - 3.0.16
     - 3.0.17
-    verified: 3.0.17
+    - 3.0.18
+    - 3.0.20
+    - 3.0.21
+    - 3.0.22
+    - 3.0.24
+    - 3.0.25
+    - 3.0.26
+    - 3.0.27
+    - 3.0.28
+    - 3.0.31
+    - 3.0.34
+    verified: 3.0.34
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -566,12 +616,20 @@ m_ResolvedPackages:
     - 2.0.15
     - 2.0.16
     - 2.0.17
+    - 2.0.18
+    - 2.0.20
+    - 2.0.21
+    - 2.0.22
     compatible:
     - 2.0.14
     - 2.0.15
     - 2.0.16
     - 2.0.17
-    verified: 2.0.17
+    - 2.0.18
+    - 2.0.20
+    - 2.0.21
+    - 2.0.22
+    verified: 2.0.22
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
@@ -619,7 +677,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Code editor integration for supporting Visual Studio Code as code
     editor for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -653,7 +711,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637800255360000000
   documentationUrl: 
@@ -740,6 +798,11 @@ m_ResolvedPackages:
     - 3.1.1
     - 3.1.2
     - 3.1.3
+    - 4.0.0
+    - 4.0.1
+    - 4.0.2
+    - 4.0.3
+    - 4.0.4
     compatible:
     - 2.2.1
     - 2.2.2
@@ -747,6 +810,11 @@ m_ResolvedPackages:
     - 3.1.1
     - 3.1.2
     - 3.1.3
+    - 4.0.0
+    - 4.0.1
+    - 4.0.2
+    - 4.0.3
+    - 4.0.4
     verified: 2.2.3
   dependencies:
   - name: com.unity.editorcoroutines
@@ -793,7 +861,7 @@ m_ResolvedPackages:
     name: 
     email: 
     url: 
-  category: Unity Test Framework
+  category: 
   type: asset
   description: Test framework for running Edit mode and Play mode tests in Unity.
   status: 4
@@ -837,6 +905,18 @@ m_ResolvedPackages:
     - 1.3.0
     - 1.3.1
     - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -847,6 +927,18 @@ m_ResolvedPackages:
     - 1.3.0
     - 1.3.1
     - 1.3.2
+    - 1.3.3
+    - 1.3.4
+    - 1.3.5
+    - 1.3.7
+    - 1.3.8
+    - 1.3.9
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -902,7 +994,7 @@ m_ResolvedPackages:
     name: 
     email: 
     url: 
-  category: Text Rendering
+  category: 
   type: asset
   description: 'TextMeshPro is the ultimate text solution for Unity. It''s the perfect
     replacement for Unity''s UI Text and the legacy Text Mesh.
@@ -1008,18 +1100,39 @@ m_ResolvedPackages:
     - 3.0.4
     - 3.0.5
     - 3.0.6
+    - 3.0.7
+    - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
+    - 3.2.0-pre.5
+    - 3.2.0-pre.6
+    - 3.2.0-pre.7
+    - 3.2.0-pre.8
+    - 3.2.0-pre.9
+    - 3.2.0-pre.10
+    - 3.2.0-pre.11
     - 4.0.0-pre.1
+    - 4.0.0-pre.2
     compatible:
     - 3.0.6
+    - 3.0.7
+    - 3.0.8
+    - 3.0.9
     - 3.2.0-pre.1
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
-    verified: 3.0.6
+    - 3.2.0-pre.5
+    - 3.2.0-pre.6
+    - 3.2.0-pre.7
+    - 3.2.0-pre.8
+    - 3.2.0-pre.9
+    - 3.2.0-pre.10
+    - 3.2.0-pre.11
+    verified: 3.0.9
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -1145,34 +1258,60 @@ m_ResolvedPackages:
     - 1.6.2
     - 1.6.3
     - 1.6.4
+    - 1.6.5
     - 1.7.0-pre.1
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.7.5
+    - 1.7.6
     - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.5
+    - 1.8.6
+    - 1.8.7
+    - 1.8.8
     compatible:
     - 1.6.4
+    - 1.6.5
     - 1.7.0-pre.1
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.7.3
+    - 1.7.4
+    - 1.7.5
+    - 1.7.6
     - 1.8.0
-    verified: 1.6.4
+    - 1.8.1
+    - 1.8.2
+    - 1.8.3
+    - 1.8.4
+    - 1.8.5
+    - 1.8.6
+    - 1.8.7
+    - 1.8.8
+    verified: 1.6.5
   dependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
   - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
-  - name: com.unity.modules.audio
-    version: 1.0.0
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.director
-    version: 1.0.0
   - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
@@ -1228,6 +1367,9 @@ m_ResolvedPackages:
   versions:
     all:
     - 1.0.0
+    - 3.0.0-exp.1
+    - 3.0.0-exp.3
+    - 3.0.0-exp.4
     compatible:
     - 1.0.0
     verified: 1.0.0
@@ -1314,11 +1456,21 @@ m_ResolvedPackages:
     - 1.7.8
     - 1.8.0-pre.1
     - 1.8.0
+    - 1.9.0
+    - 1.9.1
+    - 1.9.2
+    - 1.9.4
+    - 1.9.5
     compatible:
     - 1.7.6
     - 1.7.7
     - 1.7.8
     - 1.8.0
+    - 1.9.0
+    - 1.9.1
+    - 1.9.2
+    - 1.9.4
+    - 1.9.5
     verified: 1.7.8
   dependencies:
   - name: com.unity.ugui
@@ -1428,38 +1580,44 @@ m_ResolvedPackages:
     - 4.2.1
     - 4.3.1
     - 4.3.3
+    - 4.4.0
+    - 4.4.1
+    - 4.5.0
     compatible:
     - 4.2.0
     - 4.2.1
     - 4.3.1
     - 4.3.3
+    - 4.4.0
+    - 4.4.1
+    - 4.5.0
     verified: 4.2.1
   dependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
   - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.xr
     version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.7
-  - name: com.unity.subsystemregistration
-    version: 1.0.6
-  resolvedDependencies:
   - name: com.unity.modules.subsystems
     version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
+  - name: com.unity.subsystemregistration
+    version: 1.0.6
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.7
+  resolvedDependencies:
   - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.xr
     version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.9
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
   - name: com.unity.subsystemregistration
     version: 1.1.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.9
   keywords:
   - xr
   - sdk
@@ -1521,20 +1679,20 @@ m_ResolvedPackages:
   resolvedDependencies:
   - name: com.unity.xr.management
     version: 4.2.0
-  - name: com.unity.modules.subsystems
+  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.xr
     version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.9
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
   - name: com.unity.subsystemregistration
     version: 1.1.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.9
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -3326,8 +3484,8 @@ m_ResolvedPackages:
     name: 
     email: 
     url: 
-  category: XR
-  type: 
+  category: 
+  type: asset
   description: This package includes the tracked pose driver for the legacy input
     system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
     Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects to
@@ -3363,10 +3521,14 @@ m_ResolvedPackages:
     - 2.1.8
     - 2.1.9
     - 2.1.10
+    - 2.1.11
+    - 2.1.12
     compatible:
     - 2.1.9
     - 2.1.10
-    verified: 2.1.10
+    - 2.1.11
+    - 2.1.12
+    verified: 2.1.12
   dependencies:
   - name: com.unity.modules.vr
     version: 1.0.0
@@ -3396,7 +3558,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637812095140000000
   documentationUrl: 
@@ -3423,7 +3585,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Provides internal registration mechanism for standalone subsystems. 
     It allows a standalone subsystem to inform the Subsystem Manager of its existence.
   status: 4
@@ -3461,7 +3623,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637314426150000000
   documentationUrl: 
@@ -3487,8 +3649,8 @@ m_ResolvedPackages:
     name: 
     email: 
     url: 
-  category: Libraries
-  type: 
+  category: 
+  type: asset
   description: Custom version of the nunit package build to work with Unity. Used
     by the Unity Test Framework.
   status: 4
@@ -3503,10 +3665,14 @@ m_ResolvedPackages:
     - 1.0.6
     - 2.0.2
     - 2.0.3
+    - 2.0.4
+    - 2.0.5
     compatible:
     - 1.0.6
     - 2.0.2
     - 2.0.3
+    - 2.0.4
+    - 2.0.5
     verified: 1.0.6
   dependencies: []
   resolvedDependencies: []
@@ -3521,7 +3687,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637429759280000000
   documentationUrl: 
@@ -3548,7 +3714,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: 'The editor coroutines package allows developers to start constructs
     similar to Unity''s monobehaviour based coroutines within the editor using abitrary
     objects. '
@@ -3579,7 +3745,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637232611380000000
   documentationUrl: 
@@ -3606,7 +3772,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: A framework for making any serializable field a setting, complete
     with a pre-built settings interface.
   status: 4
@@ -3718,12 +3884,17 @@ m_ResolvedPackages:
     - 1.12.0
     - 1.12.1
     - 1.13.0
+    - 1.13.1-preview.1
+    - 1.13.1-preview.2
+    - 1.13.1
     - 2.0.0-preview.1
     - 2.0.0-preview.2
     - 2.0.0-preview.4
     - 2.0.0-preview.5
     - 2.0.2-preview.1
     - 2.2.0-preview.1
+    - 2.2.3-preview.1
+    - 2.2.3-preview.2
     - 3.0.0-pre.1
     - 3.0.0-pre.2
     - 3.0.0-pre.4
@@ -3734,6 +3905,21 @@ m_ResolvedPackages:
     - 3.2.1
     - 3.2.2-pre.1
     - 3.2.2
+    - 3.2.3-pre.1
+    - 3.2.3
+    - 3.3.0
+    - 3.4.0
+    - 3.4.1
+    - 4.0.0
+    - 4.1.1
+    - 4.1.2
+    - 4.2.0-exp-env-depth.1
+    - 4.2.0-exp-env-depth.2
+    - 4.2.0
+    - 4.3.0-pre.1
+    - 4.3.0
+    - 4.4.0
+    - 4.5.0
     compatible:
     - 3.0.1
     - 3.0.2
@@ -3744,20 +3930,20 @@ m_ResolvedPackages:
   resolvedDependencies:
   - name: com.unity.xr.management
     version: 4.2.0
-  - name: com.unity.modules.subsystems
+  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.xr
     version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.9
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
   - name: com.unity.subsystemregistration
     version: 1.1.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.9
   keywords:
   - oculus
   - xr
@@ -3828,6 +4014,22 @@ m_ResolvedPackages:
     - 1.5.1
     - 1.5.3
     - 1.6.0
+    - 1.7.0
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.9.1
+    - 1.10.0
+    - 1.11.0-exp.1
+    - 1.11.0
+    - 1.11.1-exp.1
+    - 1.12.0-exp.1
+    - 1.12.0
+    - 1.12.1
+    - 1.13.0
+    - 1.13.1
+    - 1.13.2
+    - 1.14.0
     compatible:
     - 1.4.1
     - 1.4.2
@@ -3836,31 +4038,31 @@ m_ResolvedPackages:
     - 1.5.1
     - 1.5.3
     - 1.6.0
+    - 1.7.0
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.9.1
+    - 1.10.0
+    - 1.11.0-exp.1
+    - 1.11.0
+    - 1.11.1-exp.1
+    - 1.12.0-exp.1
+    - 1.12.0
+    - 1.12.1
+    - 1.13.0
+    - 1.13.1
+    - 1.13.2
+    - 1.14.0
     verified: 1.4.2
   dependencies:
+  - name: com.unity.inputsystem
+    version: 1.3.0
   - name: com.unity.xr.management
     version: 4.0.1
   - name: com.unity.xr.legacyinputhelpers
     version: 2.1.2
-  - name: com.unity.inputsystem
-    version: 1.3.0
   resolvedDependencies:
-  - name: com.unity.xr.management
-    version: 4.2.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.9
-  - name: com.unity.subsystemregistration
-    version: 1.1.0
   - name: com.unity.inputsystem
     version: 1.3.0
   - name: com.unity.modules.uielements
@@ -3869,8 +4071,24 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
   - name: com.unity.modules.uielementsnative
     version: 1.0.0
+  - name: com.unity.xr.management
+    version: 4.2.0
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.subsystemregistration
+    version: 1.1.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.9
   keywords:
   - openxr
   - xr
@@ -3910,7 +4128,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: "The Profile Analyzer tool supports the standard Unity Profiler. You
     can use it to analyze multiple frames and multiple data sets of the CPU data
     in the Profiler.\n\nMain features: \n\u25AA Multi-frame analysis of a single
@@ -3933,8 +4151,12 @@ m_ResolvedPackages:
     - 1.1.0-pre.2
     - 1.1.0
     - 1.1.1
+    - 1.2.2
+    - 1.2.3
     compatible:
     - 1.1.1
+    - 1.2.2
+    - 1.2.3
     verified: 1.1.1
   dependencies: []
   resolvedDependencies: []
@@ -3946,7 +4168,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637705021060000000
   documentationUrl: 
@@ -4010,6 +4232,10 @@ m_ResolvedPackages:
     - 1.2.0
     - 1.2.1
     - 1.2.2
+    - 1.2.3
+    - 1.2.4
+    - 1.2.5
+    - 1.2.6
     compatible:
     - 1.0.1
     - 1.1.0
@@ -4024,6 +4250,10 @@ m_ResolvedPackages:
     - 1.2.0
     - 1.2.1
     - 1.2.2
+    - 1.2.3
+    - 1.2.4
+    - 1.2.5
+    - 1.2.6
     verified: 1.0.1
   dependencies:
   - name: com.unity.test-framework
@@ -4108,6 +4338,19 @@ m_ResolvedPackages:
     - 1.5.2
     - 1.6.0
     - 1.7.0
+    - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
+    - 1.11.0
+    - 1.12.0
+    - 1.12.1
+    - 1.12.2
+    - 1.12.4
+    - 1.12.5
+    - 1.13.0
+    - 1.14.0
     compatible:
     - 1.3.1
     - 1.3.2
@@ -4118,20 +4361,33 @@ m_ResolvedPackages:
     - 1.5.2
     - 1.6.0
     - 1.7.0
+    - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
+    - 1.11.0
+    - 1.12.0
+    - 1.12.1
+    - 1.12.2
+    - 1.12.4
+    - 1.12.5
+    - 1.13.0
+    - 1.14.0
     verified: 1.3.2
   dependencies:
-  - name: com.unity.modules.unitywebrequest
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.0.2
-  - name: com.unity.modules.androidjni
+  - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.unitywebrequest
+  - name: com.unity.modules.androidjni
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.0.2
-  - name: com.unity.modules.androidjni
+  - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   keywords: []
   registry:
@@ -4211,12 +4467,44 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.5.0
+    - 1.5.1
+    - 1.6.1
+    - 1.6.3
+    - 1.7.0
+    - 1.8.0-pre.1
+    - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.0
+    - 1.11.0
+    - 1.11.1
+    - 1.11.2
+    - 1.12.0
     compatible:
     - 1.3.0
     - 1.4.1
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.5.0
+    - 1.5.1
+    - 1.6.1
+    - 1.6.3
+    - 1.7.0
+    - 1.8.0-pre.1
+    - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.0
+    - 1.11.0
+    - 1.11.1
+    - 1.11.2
+    - 1.12.0
     verified: 1.3.0
   dependencies:
   - name: com.unity.modules.uielements
@@ -4275,7 +4563,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: library
   description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
     synced to version 13.0.1.
 
@@ -4303,8 +4591,14 @@ m_ResolvedPackages:
     - 2.0.2
     - 3.0.1
     - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
     compatible:
     - 3.0.2
+    - 3.1.0
+    - 3.2.0
+    - 3.2.1
     verified: 3.0.2
   dependencies: []
   resolvedDependencies: []

@@ -36,23 +36,23 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalHandPinchStrengthText.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalHandGrasp.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Scripts\HandMeshRenderer.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\ActivateHandTracking.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\RestartHand.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalHandCube.cs" />
      <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Scripts\TransformConverter.cs" />
      <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalDropdownHandler.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\WavePath.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\GraspText.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalHandPinchStrengthText.cs" />
      <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\PinchText.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalHandInteractionModeText.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Editor\HandMeshRendererEditor.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\StaticDualHandGestureText.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\WavePath.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\RestartHand.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\StaticGestureText.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalHandGrasp.cs" />
      <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalHandBarText.cs" />
      <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalHandCurrentTrackerText.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalHandInteractionModeText.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\StaticDualHandGestureText.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\GraspText.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Editor\HandMeshRendererEditor.cs" />
-     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\StaticGestureText.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\ActivateHandTracking.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Scripts\HandMeshRenderer.cs" />
+     <Compile Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Demo\Scripts\NaturalHandCube.cs" />
      <None Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Wave.Essence.Hand.Model.asmdef" />
      <None Include="Assets\Wave\Essence\Hand\Model\6.2.0-r.9\Hands-6.1.0\Shaders\handBlueGrafillOL.shader" />
     <Reference Include="UnityEngine">
@@ -933,15 +933,6 @@
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
-    </Reference>
-    <Reference Include="Wave.Essence">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Wave.Essence.dll</HintPath>
-    </Reference>
-    <Reference Include="Wave.Native">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Wave.Native.dll</HintPath>
-    </Reference>
-    <Reference Include="Wave.XRSDK">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Wave.XRSDK.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>

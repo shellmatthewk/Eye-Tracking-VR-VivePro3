@@ -36,51 +36,51 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Editor\ModelRendererEditor.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\ModelRenderer.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\GazePointer.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\ButtonHandTracking.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\ControllerInputSwitch.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\DropdownHandler.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\ControllerBeam.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\CubeCollisionHandler.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\HandSpotPointer.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\PointerEvents.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\HandBeamProvider.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\EyeTrackingButton.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\HandPointerProvider.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\ControllerBeamProvider.cs" />
      <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Editor\ControllerInputModuleEditor.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\EventControllerProvider.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\EyeDropDown.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\DrawFinger.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GazeInputModule.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\GestureSelection.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\RaycastResultProvider.cs" />
      <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\EventCanvasSetter.cs" />
      <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\ControllerPointer.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\HandBeam.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\ScrollViewButtonHandler.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\CubeCollisionHandler.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\HandPointerProvider.cs" />
      <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\CurrentTrackerText.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\EventControllerSetter.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Editor\GazeInputModuleEditor.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Editor\HandInputModuleEditor.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\RaycastResultProvider.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\ControllerBeamProvider.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\CubeEventHandler.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\BarTextDisplayer.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\ControllerPointerTracker.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\DropdownHand.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\EyeTrackingCube.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\HandRingPointer.cs" />
      <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\ControllerInputModule.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\HandRenderer.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\PinchStrengthText.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\HandInputModule.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\EventCanvasProvider.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\HandBeamProvider.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\PointerEvents.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\DropdownHandler.cs" />
      <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\ControllerPointerProvider.cs" />
      <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\BarEventHandler.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\HandSpotPointer.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\ButtonHandTracking.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\ControllerInputSwitch.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Editor\HandInputModuleEditor.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\HandRingPointer.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\EventControllerSetter.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\EventCanvasProvider.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Editor\ModelRendererEditor.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\EyeDropDown.cs" />
      <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\InteractionModeText.cs" />
-     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\EyeTrackingButton.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\GazePointer.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\ModelRenderer.cs" />
      <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\HandPointerTracker.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\HandInputModule.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\HandRenderer.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\ControllerBeam.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\PinchStrengthText.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GazeInputModule.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\CubeEventHandler.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\ControllerPointerTracker.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\EyeTrackingCube.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\DropdownHand.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\GestureSelection.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\GUI\HandBeam.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Scripts\EventControllerProvider.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\DrawFinger.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Editor\GazeInputModuleEditor.cs" />
      <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\GestureText.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\BarTextDisplayer.cs" />
+     <Compile Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Demo\Scripts\ScrollViewButtonHandler.cs" />
      <None Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Resources\Shaders\GazePointer01.shader" />
      <None Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Wave.Essence.InputModule.asmdef" />
      <None Include="Assets\Wave\Essence\InputModule\6.2.0-r.9\Resources\Shaders\HandSpotPointer01.shader" />
@@ -970,12 +970,6 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
         <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="Wave.Native">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Wave.Native.dll</HintPath>
-    </Reference>
-    <Reference Include="Wave.Essence">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Wave.Essence.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>

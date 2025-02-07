@@ -1,15 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave.Essence.InputModule", "Wave.Essence.InputModule.csproj", "{70f02e12-a2ed-56a1-4665-fd07f35c1a4b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave.Essence.Interaction.Mode", "Wave.Essence.Interaction.Mode.csproj", "{3dbbbcb7-7ea7-dd0f-d372-e02c7ef06a01}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{b1c768d9-d41e-4fe7-354a-c2eb36be6e6b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave.Essence.Hand.Model", "Wave.Essence.Hand.Model.csproj", "{fbd3377e-e29c-e7f4-a8f2-8592c9903977}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wave.Essence.Controller.Model", "Wave.Essence.Controller.Model.csproj", "{74eb6888-45f0-9a42-b43a-ba8fbf004c85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70f02e12-a2ed-56a1-4665-fd07f35c1a4b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70f02e12-a2ed-56a1-4665-fd07f35c1a4b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3dbbbcb7-7ea7-dd0f-d372-e02c7ef06a01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3dbbbcb7-7ea7-dd0f-d372-e02c7ef06a01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b1c768d9-d41e-4fe7-354a-c2eb36be6e6b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{b1c768d9-d41e-4fe7-354a-c2eb36be6e6b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{fbd3377e-e29c-e7f4-a8f2-8592c9903977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fbd3377e-e29c-e7f4-a8f2-8592c9903977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74eb6888-45f0-9a42-b43a-ba8fbf004c85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74eb6888-45f0-9a42-b43a-ba8fbf004c85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

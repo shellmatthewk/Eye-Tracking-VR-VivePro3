@@ -36,21 +36,21 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\RenderModel.cs" />
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\ControllerTips.cs" />
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\PoseMode.cs" />
      <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Demo\Scripts\ControllerTipsTestEventHandler.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\ControllerTipsEditor.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\CustomizeWaveController.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\PoseMode.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\RenderModel.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\CustomizeWaveControllerEditor.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Demo\Scripts\ControllerPoseModeHandler.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\ButtonEffect.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\ControllerTips.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Demo\Scripts\DemoCMGazePointer.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Demo\Scripts\DemoCMGazeInput.cs" />
+     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\ControllerTipsLine.cs" />
      <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\TransformConverter.cs" />
      <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Demo\Scripts\UpdateCanvas.cs" />
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Demo\Scripts\ControllerPoseModeHandler.cs" />
      <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\ResourceHolder.cs" />
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\ControllerTipsEditor.cs" />
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Demo\Scripts\DemoCMGazeInput.cs" />
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\CustomizeWaveController.cs" />
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\CustomizeWaveControllerEditor.cs" />
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\ControllerTipsLine.cs" />
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Scripts\ButtonEffect.cs" />
-     <Compile Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Demo\Scripts\DemoCMGazePointer.cs" />
      <None Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Font\Apache_License.txt" />
      <None Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Shaders\WaveText.shader" />
      <None Include="Assets\Wave\Essence\Controller\Model\6.2.0-r.9\Shaders\WaveColorOffset.shader" />
@@ -939,15 +939,6 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Wave.Native">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Wave.Native.dll</HintPath>
-    </Reference>
-    <Reference Include="Wave.Essence">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Wave.Essence.dll</HintPath>
-    </Reference>
-    <Reference Include="Wave.XRSDK">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Wave.XRSDK.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
