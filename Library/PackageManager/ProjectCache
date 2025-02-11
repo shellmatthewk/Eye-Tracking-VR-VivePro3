@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638742944046977943
-    m_Hash: 2087153358
+      ticks: 638749006784252792
+    m_Hash: 268943322
   m_LockFileStatus:
     m_FilePath: C:/Users/VROTO/Documents/GitHub/VR_MARCH_IN_PROGRESS (USE THE OTHER)/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638742944046977943
-    m_Hash: 2252404103
+      ticks: 638749006784282787
+    m_Hash: 189131445
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -50,6 +50,240 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/VROTO/Documents/GitHub/VR_MARCH_IN_PROGRESS (USE THE OTHER)/Packages
 m_EditorVersion: 2021.3.2f1 (d6360bedb9a0)
 m_ResolvedPackages:
+- packageId: com.htc.upm.wave.essence@https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.essence
+  testable: 0
+  isDirectDependency: 1
+  version: 6.2.0-r.9
+  source: 5
+  resolvedPath: C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.htc.upm.wave.essence@59208443d6
+  assetPath: Packages/com.htc.upm.wave.essence
+  name: com.htc.upm.wave.essence
+  displayName: VIVE Wave XR Plugin - Essence
+  author:
+    name: HTC Corporation
+    email: vivesoftware@htc.com
+    url: https://www.htc.com
+  category: 
+  type: library
+  description: 'The "VIVE Wave XR Plugin - Essence" package built on top of the "VIVE
+    Wave XR Plugin - Native" package.The package provides rich features that make
+    your developerment easier.
+
+
+    You can view the documentation for additional
+    information.
+
+
+'
+  status: 4
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    verified: 
+  dependencies:
+  - name: com.htc.upm.wave.xrsdk
+    version: 6.2.0-r.9
+  - name: com.htc.upm.wave.native
+    version: 6.2.0-r.9
+  resolvedDependencies:
+  - name: com.htc.upm.wave.xrsdk
+    version: 6.2.0-r.9
+  - name: com.unity.xr.management
+    version: 4.2.0
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.subsystemregistration
+    version: 1.1.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.9
+  - name: com.htc.upm.wave.native
+    version: 6.2.0-r.9
+  keywords:
+  - vr
+  - xr
+  - reality
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: https://hub.vive.com/storage/docs/en-us/UnityXR/UnityXRSdk.html
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+- packageId: com.htc.upm.wave.native@https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.native
+  testable: 0
+  isDirectDependency: 1
+  version: 6.2.0-r.9
+  source: 5
+  resolvedPath: C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.htc.upm.wave.native@59208443d6
+  assetPath: Packages/com.htc.upm.wave.native
+  name: com.htc.upm.wave.native
+  displayName: VIVE Wave XR Plugin - Native
+  author:
+    name: HTC Corporation
+    email: vivesoftware@htc.com
+    url: https://www.htc.com
+  category: 
+  type: library
+  description: 'The "VIVE Wave XR Plugin - Native" package provides the wraper of
+    WaveVR.
+
+
+    View the documentation for additional information.
+
+
+'
+  status: 4
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    verified: 
+  dependencies:
+  - name: com.htc.upm.wave.xrsdk
+    version: 6.2.0-r.9
+  resolvedDependencies:
+  - name: com.htc.upm.wave.xrsdk
+    version: 6.2.0-r.9
+  - name: com.unity.xr.management
+    version: 4.2.0
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.subsystemregistration
+    version: 1.1.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.9
+  keywords:
+  - vr
+  - xr
+  - reality
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: https://hub.vive.com/storage/docs/en-us/UnityXR/UnityXRSdk.html
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+- packageId: com.htc.upm.wave.xrsdk@https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.xrsdk
+  testable: 0
+  isDirectDependency: 1
+  version: 6.2.0-r.9
+  source: 5
+  resolvedPath: C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.htc.upm.wave.xrsdk@59208443d6
+  assetPath: Packages/com.htc.upm.wave.xrsdk
+  name: com.htc.upm.wave.xrsdk
+  displayName: VIVE Wave XR Plugin
+  author:
+    name: HTC Corporation
+    email: vivesoftware@htc.com
+    url: https://www.htc.com
+  category: 
+  type: library
+  description: 'The "VIVE Wave XR Plugin" package serves as a bridge between VIVE
+    moblile devices and Unity.
+
+    By communicuating with Unity''s "XR Plugin Management"
+    package, this package allows your application to run on VIVE mobile devices.
+
+
+    View
+    the documentation for additional information.
+
+
+'
+  status: 4
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    verified: 
+  dependencies:
+  - name: com.unity.xr.management
+    version: 3.2.4
+  resolvedDependencies:
+  - name: com.unity.xr.management
+    version: 4.2.0
+  - name: com.unity.modules.vr
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.physics
+    version: 1.0.0
+  - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.subsystemregistration
+    version: 1.1.0
+  - name: com.unity.xr.legacyinputhelpers
+    version: 2.1.9
+  keywords:
+  - vr
+  - xr
+  - reality
+  - xreditorsubsystem
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: https://hub.vive.com/storage/docs/en-us/UnityXR/UnityXRSdk.html
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
 - packageId: com.tobii.xr.sdk@file:C:\Users\VROTO\Desktop\VR5.26.22\TobiiXRSDK_3.0.1.179
   testable: 0
   isDirectDependency: 1
@@ -917,6 +1151,7 @@ m_ResolvedPackages:
     - 1.4.3
     - 1.4.4
     - 1.4.5
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -939,6 +1174,7 @@ m_ResolvedPackages:
     - 1.4.3
     - 1.4.4
     - 1.4.5
+    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -4483,6 +4719,7 @@ m_ResolvedPackages:
     - 1.11.1
     - 1.11.2
     - 1.12.0
+    - 1.13.0
     compatible:
     - 1.3.0
     - 1.4.1
@@ -4505,6 +4742,7 @@ m_ResolvedPackages:
     - 1.11.1
     - 1.11.2
     - 1.12.0
+    - 1.13.0
     verified: 1.3.0
   dependencies:
   - name: com.unity.modules.uielements

@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "com.htc.upm.wave.essence": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.essence",
+    "com.htc.upm.wave.native": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.native",
+    "com.htc.upm.wave.xrsdk": "https://github.com/ViveSoftware/VIVE-Wave.git?path=com.htc.upm.wave.xrsdk",
     "com.tobii.xr.sdk": "file:C:/Users/VROTO/Desktop/VR5.26.22/TobiiXRSDK_3.0.1.179",
     "com.unity.collab-proxy": "1.15.16",
     "com.unity.feature.development": "1.0.1",

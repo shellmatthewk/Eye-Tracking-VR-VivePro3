@@ -48,12 +48,10 @@ public class DisableTracking : MonoBehaviour
 
         //Disable HMD tracking 
 
-        Interop.WVR_SetTrackingMode(WVR_TrackingMode.WVR_TrackingMode_0DoF);  //Changes, no longer supported in Wave SDK 
-        
+        XRDevice.DisableAutoXRCameraTracking(Camera.main, true); // updated to focus 3
         
         cam = GameObject.Find("Main Camera");                                 //Assigning the game object (Main Camera) to the script.
-        Vector3 campositon = new Vector3(0, 0f, -2);                         //Define starting position of the camera.
-        cam.transform.position = campositon;                                  //positions camera with camposition vector.
+        cam.transform.position = new Vector3(0, 0f, -2);                               //positions camera with camposition vector.
         cam.transform.rotation = new Quaternion(0, 0, 0, 0);                  //Define starting rotation of the camera.
     }
 }

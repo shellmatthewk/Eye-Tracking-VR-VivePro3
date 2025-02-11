@@ -11,9 +11,6 @@ using System.Diagnostics;
 
 using Wave.Native;
 using Wave.Essence;
-using Wave.Essence.TrackableMarker;
-using Wave.Essence.Controller;
-using Wave.Essence.Input;
 using Wave.XR;
 using Wave.OpenXR;
 

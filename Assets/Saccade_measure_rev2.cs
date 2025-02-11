@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.IO.Ports;
 using System.Diagnostics;
-using Meta.XR;
+using Wave.Essence.Eye;
 
 public class Focus3EyeTracking : MonoBehaviour
 {
@@ -35,15 +35,21 @@ public class Focus3EyeTracking : MonoBehaviour
         UnityEngine.Debug.Log("Eye Tracking: Started");
         InitializeSerialPorts();
         InitializeFileOutput();
-        stopwatch = new Stopwatch();
+        stopwatch = new Stopwatch(); // initialize time
         stopwatch.Start();
 
-        // Request eye tracking permissions
-        OVRPermissionsRequester.RequestPermissions(new[] {
-            OVRPermissionsRequester.Permission.EyeTracking
-        });
+        // request permission 
+        if (!EyeManager.Instance.IsEyeTrackingAvailable())
+        {
+            UnityEngine.Debug.LogError("Eye tracking is not available on this device.");
+            return;
+        }
+
+        UnityEngine.Debug.Log("Eye tracking is enabled.");
+
     }
 
+    // Data is sent to computer using COM20 and is returned in COM6 and COM25
     void InitializeSerialPorts()
     {
         if (enablePortHorizontal)
@@ -70,7 +76,7 @@ public class Focus3EyeTracking : MonoBehaviour
             };
         }
     }
-
+    // these might have gotten edited, but creates file with eye tracking data
     void InitializeFileOutput()
     {
         File_Path = $"{Directory.GetCurrentDirectory()}\\Focus3EyeTracking_{UserID}.txt";
@@ -80,56 +86,51 @@ public class Focus3EyeTracking : MonoBehaviour
 
     void Update()
     {
-        if (!OVREyeGaze.instance.EyeTrackingEnabled)
+        if (!EyeManager.Instance.IsEyeTrackingAvailable())
         {
             UnityEngine.Debug.LogWarning("Eye tracking not enabled!");
             return;
         }
 
+        Vector3 eyeDirection = EyeManager.Instance.CombinedEyeDirection();
+        long timestamp = DateTime.Now.Ticks;
+
         // Get eye tracking data
-        eyesValid = OVREyeGaze.instance.GetEyeGazePosition(out Vector3 eyeGazePosition) &&
-                    OVREyeGaze.instance.GetEyeGazeDirection(out Vector3 eyeGazeDirection);
-
-        if (eyesValid)
-        {
-            // Format eye tracking data
-            string eyeDataHorizontal = eyeGazeDirection.x.ToString();
-            string eyeDataVertical = eyeGazeDirection.y.ToString();
-            long timestamp = DateTime.Now.Ticks;
-
-            // Write to file
-            string logEntry = $"{timestamp},{eyeGazeDirection.x},{eyeGazeDirection.y},{eyeGazeDirection.z}," +
+        string logEntry = $"{timestamp},{eyeGazeDirection.x},{eyeGazeDirection.y},{eyeGazeDirection.z}," +
                             $"{Vector3.Distance(leftEyePosition, rightEyePosition)},{(leftEyeOpenness + rightEyeOpenness) / 2}\n";
             File.AppendAllText(File_Path, logEntry);
 
-            // Send to serial ports
-            if (enablePortHorizontal && !_serialPort.IsOpen)
-            {
-                try
-                {
-                    _serialPort.Open();
-                    _serialPort.WriteLine(eyeDataHorizontal);
-                    _serialPort.Close();
-                }
-                catch (Exception e)
-                {
-                    UnityEngine.Debug.LogError($"Serial port error (horizontal): {e.Message}");
-                }
-            }
+        SendToSerialPorts(eyeDirection.x.ToString(), eyeDirection.y.ToString());
+    }
 
-            if (enablePortVertical && !_serialPortVertical.IsOpen)
+    void SendToSerialPoits(string eyeDataHorizontal, string eyeDataVertical)
+    {   
+        try 
+        {   //Write to file 
+            if (enablePortHorizontal && _serialPort != null && !_serialPort.IsOpen)
             {
-                try
-                {
-                    _serialPortVertical.Open();
-                    _serialPortVertical.WriteLine(eyeDataVertical);
-                    _serialPortVertical.Close();
-                }
-                catch (Exception e)
-                {
-                    UnityEngine.Debug.LogError($"Serial port error (vertical): {e.Message}");
-                }
+                _serialPort.Open();
+                _serialPort.WriteLine(eyeDataHorizontal);
+                _serialPort.Close();
             }
+        } //Cannot send to serial port 
+        catch (Exception e) 
+        {
+                UnityEngine.Debug.LogError($"Serial port error (horizontal): {e.Message}");
+        }
+
+        try
+        {
+            if (enablePortVertical && _serialPortVertical != null && !_serialPortVertical.IsOpen)
+            {
+                _serialPortVertical.Open();
+                _serialPortVertical.WriteLine(eyeDataVertical);
+                _serialPortVertical.Close();
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Serial port error (vertical): {e.Message}");
         }
     }
 
