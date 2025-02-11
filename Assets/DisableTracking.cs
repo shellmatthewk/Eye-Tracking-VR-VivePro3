@@ -25,8 +25,9 @@ using System;
 using System.IO;
 using System.Data;
 using System.Text;
-using ViveSR.anipal.Eye;
 using UnityEngine.XR;
+using Wave.Native;
+using Wave.XR;
 
 public class DisableTracking : MonoBehaviour
 {
@@ -34,7 +35,7 @@ public class DisableTracking : MonoBehaviour
     
     void Start()
     {
-        TrackingOFF();
+        DisableHeadTracking();
     }
     
     void Update()
@@ -42,9 +43,14 @@ public class DisableTracking : MonoBehaviour
         
     }
 
-    void TrackingOFF()
+    void DisableHeadTracking()
     {
-        XRDevice.DisableAutoXRCameraTracking(GetComponent<Camera>(), true);   //Disable HMD tracking
+
+        //Disable HMD tracking 
+
+        Interop.WVR_SetTrackingMode(WVR_TrackingMode.WVR_TrackingMode_0DoF);  //Changes, no longer supported in Wave SDK 
+        
+        
         cam = GameObject.Find("Main Camera");                                 //Assigning the game object (Main Camera) to the script.
         Vector3 campositon = new Vector3(0, 0f, -2);                         //Define starting position of the camera.
         cam.transform.position = campositon;                                  //positions camera with camposition vector.
