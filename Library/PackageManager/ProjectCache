@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638749006784252792
-    m_Hash: 268943322
+      ticks: 638751598169586014
+    m_Hash: 1468575975
   m_LockFileStatus:
     m_FilePath: C:/Users/VROTO/Documents/GitHub/VR_MARCH_IN_PROGRESS (USE THE OTHER)/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638749006784282787
-    m_Hash: 189131445
+      ticks: 638751598169636006
+    m_Hash: 3521536464
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -33,20 +33,6 @@ m_LocalPackages:
       serializedVersion: 2
       ticks: 0
     m_Hash: 0
-  - m_FilePath: C:\Users\VROTO\Desktop\VR5.26.22\com.valvesoftware.unity.openvr-1.1.4.tgz/package.json
-    m_PathExists: 0
-    m_ContentTrackingEnabled: 1
-    m_ModificationDate:
-      serializedVersion: 2
-      ticks: 0
-    m_Hash: 0
-  - m_FilePath: C:\Users\VROTO\Desktop\VR5.26.22\com.valvesoftware.unity.openvr-1.1.4.tgz
-    m_PathExists: 1
-    m_ContentTrackingEnabled: 1
-    m_ModificationDate:
-      serializedVersion: 2
-      ticks: 637714923583658396
-    m_Hash: 2919789393
 m_ProjectPath: C:/Users/VROTO/Documents/GitHub/VR_MARCH_IN_PROGRESS (USE THE OTHER)/Packages
 m_EditorVersion: 2021.3.2f1 (d6360bedb9a0)
 m_ResolvedPackages:
@@ -448,6 +434,7 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.5.2
     - 2.6.0
+    - 2.7.1
     compatible:
     - 1.15.16
     - 1.15.17
@@ -481,6 +468,7 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.5.2
     - 2.6.0
+    - 2.7.1
     verified: 1.15.18
   dependencies:
   - name: com.unity.services.core
@@ -1037,6 +1025,7 @@ m_ResolvedPackages:
     - 4.0.2
     - 4.0.3
     - 4.0.4
+    - 4.1.0
     compatible:
     - 2.2.1
     - 2.2.2
@@ -1049,6 +1038,7 @@ m_ResolvedPackages:
     - 4.0.2
     - 4.0.3
     - 4.0.4
+    - 4.1.0
     verified: 2.2.3
   dependencies:
   - name: com.unity.editorcoroutines
@@ -1881,91 +1871,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 4.2.0
-    nextVersion: 
-- packageId: com.valvesoftware.unity.openvr@file:C:\Users\VROTO\Desktop\VR5.26.22\com.valvesoftware.unity.openvr-1.1.4.tgz
-  testable: 0
-  isDirectDependency: 1
-  version: 1.1.4
-  source: 6
-  resolvedPath: C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.valvesoftware.unity.openvr@3ee6c452bc34
-  assetPath: Packages/com.valvesoftware.unity.openvr
-  name: com.valvesoftware.unity.openvr
-  displayName: OpenVR XR Plugin
-  author:
-    name: Valve Corporation
-    email: 
-    url: 
-  category: 
-  type: 
-  description: 'Provides rendering support for OpenVR devices in Unity XR. For input
-    please see: https://github.com/ValveSoftware/steamvr_unity_plugin'
-  status: 4
-  errors: []
-  versions:
-    all: []
-    compatible: []
-    verified: 
-  dependencies:
-  - name: com.unity.xr.management
-    version: 3.2.13
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.4
-  resolvedDependencies:
-  - name: com.unity.xr.management
-    version: 4.2.0
-  - name: com.unity.modules.vr
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.xr
-    version: 1.0.0
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.subsystemregistration
-    version: 1.1.0
-  - name: com.unity.xr.legacyinputhelpers
-    version: 2.1.9
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  keywords:
-  - openvr
-  - xr
-  - virtual
-  - reality
-  - xreditorsubsystem
-  - xrsdk
-  - steamvr
-  - vr
-  - unity
-  - sdk
-  - valve
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 0
-  documentationUrl: 
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
     nextVersion: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
@@ -3707,6 +3612,71 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
+- packageId: com.unity.subsystemregistration@1.1.0
+  testable: 0
+  isDirectDependency: 0
+  version: 1.1.0
+  source: 1
+  resolvedPath: C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.unity.subsystemregistration@1.1.0
+  assetPath: Packages/com.unity.subsystemregistration
+  name: com.unity.subsystemregistration
+  displayName: Subsystem Registration
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: Provides internal registration mechanism for standalone subsystems. 
+    It allows a standalone subsystem to inform the Subsystem Manager of its existence.
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview.4
+    - 1.0.4
+    - 1.0.5
+    - 1.0.6
+    - 1.1.0
+    - 1.1.1
+    - 1.1.2
+    compatible:
+    - 1.1.0
+    - 1.1.1
+    - 1.1.2
+    verified: 1.1.2
+  dependencies:
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.subsystems
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - subsystem
+  - registration
+  - internal
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 637314426150000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.subsystemregistration.git
+    revision: 72584ba5248fbe79e560e795ad819f876954fceb
+    path: 
+  unityLifecycle:
+    version: 1.1.0
+    nextVersion: 
 - packageId: com.unity.xr.legacyinputhelpers@2.1.9
   testable: 0
   isDirectDependency: 0
@@ -3806,71 +3776,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 2.1.9
-    nextVersion: 
-- packageId: com.unity.subsystemregistration@1.1.0
-  testable: 0
-  isDirectDependency: 0
-  version: 1.1.0
-  source: 1
-  resolvedPath: C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.unity.subsystemregistration@1.1.0
-  assetPath: Packages/com.unity.subsystemregistration
-  name: com.unity.subsystemregistration
-  displayName: Subsystem Registration
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: Provides internal registration mechanism for standalone subsystems. 
-    It allows a standalone subsystem to inform the Subsystem Manager of its existence.
-  status: 4
-  errors: []
-  versions:
-    all:
-    - 1.0.0-preview.4
-    - 1.0.4
-    - 1.0.5
-    - 1.0.6
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2
-    compatible:
-    - 1.1.0
-    - 1.1.1
-    - 1.1.2
-    verified: 1.1.2
-  dependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
-  - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  keywords:
-  - subsystem
-  - registration
-  - internal
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-  hideInEditor: 0
-  isAssetStorePackage: 0
-  datePublishedTicks: 637314426150000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.cds.internal.unity3d.com/unity/com.unity.subsystemregistration.git
-    revision: 72584ba5248fbe79e560e795ad819f876954fceb
-    path: 
-  unityLifecycle:
-    version: 1.1.0
     nextVersion: 
 - packageId: com.unity.ext.nunit@1.0.6
   testable: 0

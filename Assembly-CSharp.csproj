@@ -62,7 +62,6 @@
      <Compile Include="Assets\ViveSR\Scripts\Eye\SRanipal_EyeShapeTableDrawer.cs" />
      <Compile Include="Assets\Saccade_measure_rev1.cs" />
      <Compile Include="Assets\Ardity\Scripts\Threads\AbstractSerialThread.cs" />
-     <Compile Include="Assets\Saccade_measure_rev2.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Eye\Sample\SRanipal_EyeFocusSample_v2.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Lip\SRanipal_Lip.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Eye\SRanipal_EyeDataType_v2.cs" />
@@ -81,6 +80,7 @@
      <Compile Include="Assets\ViveSR\Scripts\Eye\Sample\SRanipal_EyeSettingSample.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Eye\Sample\SRanipal_AvatarEyeSample.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Lip\SRanipal_LipData_v2.cs" />
+     <Compile Include="Assets\Focus3EyeTracking.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Eye\SRanipal_Eye_Framework.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Eye\SRanipal_EyeData.cs" />
      <Compile Include="Assets\ViveSR\Scripts\Eye\SRanipal_Eye_API.cs" />
@@ -338,11 +338,11 @@
     <Reference Include="ReportGeneratorMerged">
         <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
@@ -944,176 +944,75 @@
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenVR">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.OpenVR.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEngineBridge.007">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.007.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InputSystem">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.EditorCoroutines.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Management">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Tutorials.Core">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.Tutorials.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.007">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.007.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Management.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="TobiiXRSDK">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\TobiiXRSDK.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Subsystem.Registration">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
-    </Reference>
-    <Reference Include="TobiiXRCore">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\TobiiXRCore.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Tutorials.Core.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.Tutorials.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenVR.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="TobiiXRG2OM">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\TobiiXRG2OM.dll</HintPath>
-    </Reference>
-    <Reference Include="GazeModifierEditor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\GazeModifierEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="TobiiXRDevTools">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\TobiiXRDevTools.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.OpenXR.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
-    </Reference>
-    <Reference Include="TobiiXRInternalEditor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\TobiiXRInternalEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.OpenXR.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
-    </Reference>
-    <Reference Include="TobiiXREditor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\TobiiXREditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-        <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Wave.Essence.Editor.csproj">
+      <Project>{9bd13734-a954-6fe9-2378-e6ec5a516aa8}</Project>
+      <Name>Wave.Essence.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{fc605cef-d158-f9bc-7282-40cde28f2543}</Project>
+      <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{50db8464-38b1-9cb3-497c-4b4fa7b51616}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj">
+      <Project>{4f1969b2-2e8e-474a-bced-4ab89d517947}</Project>
+      <Name>Unity.Performance.Profile-Analyzer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEngineBridge.007.csproj">
+      <Project>{411dc240-c5f9-a584-a733-7977c6bc7bb6}</Project>
+      <Name>Unity.InternalAPIEngineBridge.007</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj">
+      <Project>{ce4abaeb-5d91-b101-6734-6dde220da346}</Project>
+      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
+      <Project>{ddea377e-48b7-ea8b-85bc-73f72aca679e}</Project>
+      <Name>Unity.VisualScripting.State.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Wave.Essence.Controller.Model.csproj">
       <Project>{74eb6888-45f0-9a42-b43a-ba8fbf004c85}</Project>
       <Name>Wave.Essence.Controller.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
+      <Project>{2a3c953b-c617-a9ff-e593-41a99a4f73cb}</Project>
+      <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj">
+      <Project>{27fa3769-ace8-aea2-594e-866a39538ba2}</Project>
+      <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{b1a77414-fd97-8ba5-7f03-1d68bfc9afe9}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InputSystem.csproj">
+      <Project>{3629cb54-b918-6130-bab7-123a3f8900f4}</Project>
+      <Name>Unity.InputSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{eecd3a72-98b5-0024-544e-1fcc4c365467}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
+      <Project>{1c4e7e21-7f31-13a5-5a30-1a9edbb80b1d}</Project>
+      <Name>UnityEngine.SpatialTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{0f83dce3-a355-e406-21b2-12fff8f8fb47}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Wave.Essence.csproj">
+      <Project>{f6d9dbfa-4c00-8872-2b63-ca89714a2e41}</Project>
+      <Name>Wave.Essence</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
+      <Project>{0350d263-a522-27eb-24c7-faf22fc2d432}</Project>
+      <Name>Unity.EditorCoroutines.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Wave.Essence.InputModule.csproj">
       <Project>{70f02e12-a2ed-56a1-4665-fd07f35c1a4b}</Project>
@@ -1123,9 +1022,181 @@
       <Project>{fbd3377e-e29c-e7f4-a8f2-8592c9903977}</Project>
       <Name>Wave.Essence.Hand.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.Management.csproj">
+      <Project>{9dcda53c-b646-ca55-8447-895c5a193306}</Project>
+      <Name>Unity.XR.Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Oculus.Editor.csproj">
+      <Project>{cc0394bc-37e0-1bd9-11f9-9e696ca1d574}</Project>
+      <Name>Unity.XR.Oculus.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Tutorials.Core.csproj">
+      <Project>{224e579b-2b2d-5d67-5299-c18a1661f6ee}</Project>
+      <Name>Unity.Tutorials.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="Wave.Essence.Interaction.Mode.csproj">
       <Project>{3dbbbcb7-7ea7-dd0f-d372-e02c7ef06a01}</Project>
       <Name>Wave.Essence.Interaction.Mode</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
+      <Project>{55039abe-bc24-def0-ae06-a6e32757b969}</Project>
+      <Name>Unity.VisualScripting.Flow.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Wave.XRSDK.csproj">
+      <Project>{bb2b0fb1-11a4-c7fb-87d3-951b74fe6ee6}</Project>
+      <Name>Wave.XRSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEditorBridge.007.csproj">
+      <Project>{e77ca296-9dff-2b8e-1452-92fb42892e56}</Project>
+      <Name>Unity.InternalAPIEditorBridge.007</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{6238113d-314d-1fe2-aaf3-e46f6c398701}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.csproj">
+      <Project>{7d0439f3-b8e1-0fa2-dc26-c65d719ea297}</Project>
+      <Name>Unity.XR.OpenXR.Features.OculusQuestSupport.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Management.Editor.csproj">
+      <Project>{c384b774-e6ce-071b-41c5-860d8c622c00}</Project>
+      <Name>Unity.XR.Management.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{8d2931b0-2050-dd70-93d0-a3cd64cf526a}</Project>
+      <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
+      <Project>{f0608241-60ee-ae5c-4102-f6640d1140e1}</Project>
+      <Name>Unity.VisualScripting.Core.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{ea89e34d-5405-2f9e-a1ef-6b822cb3f93a}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="TobiiXRSDK.csproj">
+      <Project>{dea06c62-5fcf-b1b1-105d-4b669c3c8c96}</Project>
+      <Name>TobiiXRSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="Wave.XRSDK.Editor.csproj">
+      <Project>{f8b8a824-60e3-c5ed-0417-df1ad94ac4e2}</Project>
+      <Name>Wave.XRSDK.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Subsystem.Registration.csproj">
+      <Project>{fb8b35f7-e24d-d898-09dc-89e845cf500d}</Project>
+      <Name>Unity.Subsystem.Registration</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
+      <Project>{18f720bc-c156-b8d9-f006-c62bbe0f5c86}</Project>
+      <Name>Unity.VisualScripting.Flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="Wave.Native.csproj">
+      <Project>{9cd0aaa2-ee27-478f-daa7-a4579ad95b25}</Project>
+      <Name>Wave.Native</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
+      <Project>{6bb61c71-07f5-01f2-42ff-0e2409ccd2ae}</Project>
+      <Name>Unity.PlasticSCM.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.csproj">
+      <Project>{6083c3a3-8f22-6a83-1d2a-f7fc3ba5144f}</Project>
+      <Name>Unity.XR.OpenXR.Features.OculusQuestSupport</Name>
+    </ProjectReference>
+    <ProjectReference Include="TobiiXRCore.csproj">
+      <Project>{1dd15926-7866-2da2-4b14-cd2af13d6ed1}</Project>
+      <Name>TobiiXRCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Tutorials.Core.Editor.csproj">
+      <Project>{6437d63e-198a-adcb-35d0-8f5ae84523bc}</Project>
+      <Name>Unity.Tutorials.Core.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.csproj">
+      <Project>{cce85f15-0d3f-e7d1-1484-b4232d0d8e8a}</Project>
+      <Name>Unity.Services.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
+      <Project>{97c4e74a-5bdc-ee6c-8cc0-4e8793361895}</Project>
+      <Name>Unity.VisualScripting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="TobiiXRG2OM.csproj">
+      <Project>{272dc3f9-629e-7a07-0eed-76c2fc984700}</Project>
+      <Name>TobiiXRG2OM</Name>
+    </ProjectReference>
+    <ProjectReference Include="GazeModifierEditor.csproj">
+      <Project>{b671fdaa-8f51-9804-a7de-fb141944d17c}</Project>
+      <Name>GazeModifierEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
+      <Project>{988932a4-d10f-1f3f-5997-18a0307b33d2}</Project>
+      <Name>Unity.Services.Core.Analytics</Name>
+    </ProjectReference>
+    <ProjectReference Include="TobiiXRDevTools.csproj">
+      <Project>{9bd8cc77-8a83-b592-86a2-9b3bfe2be124}</Project>
+      <Name>TobiiXRDevTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
+      <Project>{4ebb5e32-fab9-ef46-9200-8390c9f62c80}</Project>
+      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
+      <Project>{08a566aa-56de-bbec-66ab-ec33620cd453}</Project>
+      <Name>Unity.VisualScripting.Shared.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Editor.csproj">
+      <Project>{47d269dd-6a2d-f7d9-031e-9ad8700c4de0}</Project>
+      <Name>Unity.XR.OpenXR.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Environments.csproj">
+      <Project>{bf8dc88a-7429-645d-831e-20a0dbe1445f}</Project>
+      <Name>Unity.Services.Core.Environments</Name>
+    </ProjectReference>
+    <ProjectReference Include="TobiiXRInternalEditor.csproj">
+      <Project>{41f0ac00-cf1a-cdbc-3acb-781ef382d330}</Project>
+      <Name>TobiiXRInternalEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{11d86c89-eb28-e8c4-025c-6f3ba9015200}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
+      <Project>{3a3200a9-8929-cd68-46da-dc9c6f87f00e}</Project>
+      <Name>UnityEditor.XR.LegacyInputHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.csproj">
+      <Project>{7ccb9ea2-ac90-4b5e-1011-5af653cca5bf}</Project>
+      <Name>Unity.XR.OpenXR</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.Oculus.csproj">
+      <Project>{11a13e33-c34c-2aa9-7a71-e6f2438e7031}</Project>
+      <Name>Unity.XR.Oculus</Name>
+    </ProjectReference>
+    <ProjectReference Include="TobiiXREditor.csproj">
+      <Project>{f529aaa8-f1eb-8e71-7c4a-120dda7add2e}</Project>
+      <Name>TobiiXREditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
+      <Project>{998af6b2-18c8-1de9-69eb-5036a96d0dea}</Project>
+      <Name>UnityEditor.SpatialTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj">
+      <Project>{f91000c7-dcf5-ab20-e19e-ed881049b0f0}</Project>
+      <Name>Unity.TestTools.CodeCoverage.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Features.ConformanceAutomation.csproj">
+      <Project>{6e623cff-e34f-0a72-7db3-543eabbfaf2d}</Project>
+      <Name>Unity.XR.OpenXR.Features.ConformanceAutomation</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.csproj">
+      <Project>{f3c8fc05-377c-380d-b041-f3037dc51ed5}</Project>
+      <Name>Unity.XR.OpenXR.Features.RuntimeDebugger.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.csproj">
+      <Project>{a13c4035-4610-2b9d-6a73-c3a19709f402}</Project>
+      <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="Wave.Native.Editor.csproj">
+      <Project>{675e51fd-4cb7-73c6-a2ae-46cbde241d55}</Project>
+      <Name>Wave.Native.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

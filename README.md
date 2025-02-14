@@ -3,7 +3,7 @@ Setting up Version Control for Robi/Kojima Lab for VR Data Collection of Eye Tra
 
 Files needed for editing: 
 - DisableTracking.cs - Edited
-- TargetPosition.cs - Edited
+- TargetPosition.cs - Probably will stay the same 
 - Saccade_measure_rev2.cs = Edited
 - SRanipal_Eye_Framework.cs
 

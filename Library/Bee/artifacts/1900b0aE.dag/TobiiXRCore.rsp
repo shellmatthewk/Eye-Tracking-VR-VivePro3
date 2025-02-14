@@ -116,7 +116,6 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
--define:OPENVR_ENABLED
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
@@ -414,7 +413,6 @@
 -r:"C:/Users/VROTO/Documents/GitHub/VR_MARCH_IN_PROGRESS (USE THE OTHER)/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.XR.Management.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/Unity.XR.OpenVR.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "C:/Users/VROTO/Desktop/VR5.26.22/TobiiXRSDK_3.0.1.179/Runtime/Core/CameraHelper.cs"
