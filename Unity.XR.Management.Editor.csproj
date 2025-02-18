@@ -36,33 +36,33 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRPackageInitialization.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRGeneralSettingsPerBuildTarget.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRLoaderInfoManager.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRCustomLoaderUI.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRPackageInitializationSettings.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRSettingsManager.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\Metadata\XRPackageMetadataStore.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\EditorUtilities.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRSupportedBuildTargetAttribute.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRConfigurationProvider.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRManagerEditor.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XREditorWorkQueue.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRConstants.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\Legacy\XRLegacyUninstaller.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\TypeLoaderExtensions.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRGeneralBuildProcessor.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRGeneralSettingsUpgrade.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\PackageNotificationUtils.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRLoaderOrderUI.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\BuildHelpers.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRLoaderInfo.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\Metadata\XRPackage.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\Metadata\XRPackageMetadata.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRCustomLoaderUIManager.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\Metadata\KnownPackages.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\XRBuildProcessorHelper.cs" />
-     <None Include="Library\PackageCache\com.unity.xr.management@4.2.0\Editor\Unity.XR.Management.Editor.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRPackageInitialization.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRGeneralSettingsPerBuildTarget.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRLoaderInfoManager.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRCustomLoaderUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRPackageInitializationSettings.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRSettingsManager.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\Metadata\XRPackageMetadataStore.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\EditorUtilities.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRSupportedBuildTargetAttribute.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRConfigurationProvider.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRManagerEditor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XREditorWorkQueue.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRConstants.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\Legacy\XRLegacyUninstaller.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\TypeLoaderExtensions.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRGeneralBuildProcessor.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRGeneralSettingsUpgrade.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\PackageNotificationUtils.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRLoaderOrderUI.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\BuildHelpers.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRLoaderInfo.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\Metadata\XRPackage.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\Metadata\XRPackageMetadata.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRCustomLoaderUIManager.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\Metadata\KnownPackages.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\XRBuildProcessorHelper.cs" />
+     <None Include="Library\PackageCache\com.unity.xr.management@4.2.1\Editor\Unity.XR.Management.Editor.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -315,6 +315,9 @@
     <Reference Include="UnityEditor.WebGL.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
@@ -347,6 +350,12 @@
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>

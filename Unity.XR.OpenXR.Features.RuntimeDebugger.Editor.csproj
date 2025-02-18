@@ -36,9 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Library\PackageCache\com.unity.xr.openxr@1.4.1\RuntimeDebugger\Editor\RuntimeDebuggerWindow.cs" />
-     <Compile Include="Library\PackageCache\com.unity.xr.openxr@1.4.1\RuntimeDebugger\Editor\RuntimeDebuggerOpenXRFeatureEditor.cs" />
-     <None Include="Library\PackageCache\com.unity.xr.openxr@1.4.1\RuntimeDebugger\Editor\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.asmdef" />
+     <Compile Include="Library\PackageCache\com.unity.xr.openxr@1.4.2\RuntimeDebugger\Editor\RuntimeDebuggerWindow.cs" />
+     <Compile Include="Library\PackageCache\com.unity.xr.openxr@1.4.2\RuntimeDebugger\Editor\RuntimeDebuggerOpenXRFeatureEditor.cs" />
+     <None Include="Library\PackageCache\com.unity.xr.openxr@1.4.2\RuntimeDebugger\Editor\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -291,6 +291,9 @@
     <Reference Include="UnityEditor.WebGL.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
@@ -323,6 +326,12 @@
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:\Users\VROTO\Documents\GitHub\VR_MARCH_IN_PROGRESS (USE THE OTHER)\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>

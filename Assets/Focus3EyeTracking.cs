@@ -29,11 +29,12 @@ public class Focus3EyeTracking : MonoBehaviour
     private float leftEyeOpenness;
     private float rightEyeOpenness;
     private float convergenceDistance;
-    private bool eyesValid;
+    //private bool eyesValid;
 
     void Start()
     {
         UnityEngine.Debug.Log("Eye Tracking: Started");
+        // start streaming with serial ports 
         InitializeSerialPorts();
         InitializeFileOutput();
         stopwatch = new Stopwatch(); // initialize time
@@ -55,36 +56,43 @@ public class Focus3EyeTracking : MonoBehaviour
     {
         if (enablePortHorizontal)
         {
-            _serialPort = new SerialPort(EyeDataCOMPortHorz)
+            _serialPort = new SerialPort(EyeDataCOMPortHorz, 115200)
             {
-                BaudRate = 115200,
                 ReadTimeout = 100,
                 WriteTimeout = 100,
                 DtrEnable = true,
                 RtsEnable = true
             };
+            _serialPort.Open();
         }
 
         if (enablePortVertical)
         {
-            _serialPortVertical = new SerialPort(EyeDataCOMPortVert)
+            _serialPortVertical = new SerialPort(EyeDataCOMPortVert, 115200)
             {
-                BaudRate = 115200,
                 ReadTimeout = 1000,
                 WriteTimeout = 1000,
                 DtrEnable = true,
                 RtsEnable = true
             };
+            _serialPortVertical.Open();
+
         }
     }
     // these might have gotten edited, but creates file with eye tracking data
+
+    //extra vars:
+    /* 
+    eyeDirection
+    */
+
     void InitializeFileOutput()
     {
-        File_Path = $"{Directory.GetCurrentDirectory()}\\Focus3EyeTracking_{UserID}.txt";
-        string header = "time(100ns),eyeDirection,convergenceDistance,eyeOpenness\n";
+        File_Path = $"{Directory.GetCurrentDirectory()}\\\\Focus3EyeTracking_{UserID}_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
+        string header = "time(100ns),convergenceDistance,eyeOpenness\n";
         File.WriteAllText(File_Path, header);
     }
-
+/*
     void Update()
     {
         if (!EyeManager.Instance.IsEyeTrackingAvailable())
@@ -93,42 +101,75 @@ public class Focus3EyeTracking : MonoBehaviour
             return;
         }
 
-        //Vector3 eyeDirection = EyeManager.Instance.CombinedEyeDirection();
+        Vector3 eyeDirection = EyeManager.Instance.GetEyeDirectionCombined();
         //Vector3 leftEyeDirection = EyeManager.GetLeftEyeDirectionNormalized();
         long timestamp = DateTime.Now.Ticks;
         // {eyeGazeDirection.x},{eyeGazeDirection.y},{eyeGazeDirection.z}
         // Get eye tracking data
+
         string logEntry = $"{timestamp}," +
                             $"{Vector3.Distance(leftEyePosition, rightEyePosition)},{(leftEyeOpenness + rightEyeOpenness) / 2}\n";
             File.AppendAllText(File_Path, logEntry);
 
+        string logEntry = $"{timestamp},{eyeDirection.x:F2},{eyeDirection.y:F2},{Vector3.Distance(leftEyePosition, rightEyePosition)},{(leftEyeOpenness + rightEyeOpenness) / 2}\n";
+        File.AppendAllText(File_Path, logEntry);
         // SendToSerialPorts(eyeDirection.x.ToString(), eyeDirection.y.ToString()); // check for error here
-        SendToSerialPorts(eyeDirection.x.ToString(), eyeDirection.y.ToString());
+        SendToSerialPorts(eyeDirection.x.ToString("F2"), eyeDirection.y.ToString("F2"));
+    }
+*/
+    void Update()
+    {
+        // Check if eye tracking is available
+        if (!EyeManager.Instance.IsEyeTrackingAvailable())
+        {
+            UnityEngine.Debug.LogWarning("Eye tracking not available!");
+            return;
+        }
+
+        // Enable eye tracking if not already enabled
+        EyeManager.Instance.EnableEyeTracking = true;
+
+        // Retrieve combined eye direction
+        Vector3 eyeDirection = Vector3.zero;
+        if (EyeManager.Instance.GetCombindedEyeDirectionNormalized(out eyeDirection))
+        {
+            long timestamp = DateTime.Now.Ticks;
+
+            // Log the eye direction data
+            string logEntry = $"{timestamp},{eyeDirection.x:F3},{eyeDirection.y:F3},{eyeDirection.z:F3}\n";
+            File.AppendAllText(File_Path, logEntry);
+
+            // Send to COM ports
+            SendToSerialPorts(eyeDirection.x.ToString("F3"), eyeDirection.y.ToString("F3"));
+
+            UnityEngine.Debug.Log($"Eye Direction: {eyeDirection}");
+        }
+        else
+        {
+            UnityEngine.Debug.LogWarning("Failed to retrieve eye tracking data.");
+        }
     }
 
+
     void SendToSerialPorts(string eyeDataHorizontal, string eyeDataVertical)
-    {   
-        try 
-        {   //Write to file 
-            if (enablePortHorizontal && _serialPort != null && !_serialPort.IsOpen)
-            {
-                _serialPort.Open();
-                _serialPort.WriteLine(eyeDataHorizontal);
-                _serialPort.Close();
-            }
-        } //Cannot send to serial port 
-        catch (Exception e) 
+    {
+        try
         {
-                UnityEngine.Debug.LogError($"Serial port error (horizontal): {e.Message}");
+            if (enablePortHorizontal && _serialPort != null && _serialPort.IsOpen)
+            {
+                _serialPort.WriteLine(eyeDataHorizontal);
+            }
+        }
+        catch (Exception e)
+        {
+            UnityEngine.Debug.LogError($"Serial port error (horizontal): {e.Message}");
         }
 
         try
         {
-            if (enablePortVertical && _serialPortVertical != null && !_serialPortVertical.IsOpen)
+            if (enablePortVertical && _serialPortVertical != null && _serialPortVertical.IsOpen)
             {
-                _serialPortVertical.Open();
                 _serialPortVertical.WriteLine(eyeDataVertical);
-                _serialPortVertical.Close();
             }
         }
         catch (Exception e)
@@ -141,10 +182,10 @@ public class Focus3EyeTracking : MonoBehaviour
     {
         if (_serialPort != null && _serialPort.IsOpen)
             _serialPort.Close();
-        
+
         if (_serialPortVertical != null && _serialPortVertical.IsOpen)
             _serialPortVertical.Close();
-            
+
         stopwatch.Stop();
     }
 }
